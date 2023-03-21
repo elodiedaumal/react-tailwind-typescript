@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Benefits from './pages/Benefits';
 import Classes from './pages/Classes';
+import ContactUs from './pages/ContactUs';
 import Home from './pages/Home';
 import { SelectedPage } from './shared/types';
 
@@ -37,6 +39,8 @@ function App() {
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <Classes setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }
