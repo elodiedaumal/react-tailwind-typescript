@@ -37,11 +37,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  <Link
-                    page='About'
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
+
                   <Link
                     page='Benefits'
                     selectedPage={selectedPage}
@@ -99,17 +95,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                 setSelectedPage={setSelectedPage}
               />
             </div>
-            <div
-              onClick={() => {
-                setIsMenuToggle(!isMenuToggle);
-              }}
-            >
-              <Link
-                page='About'
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-            </div>
+
             <div
               onClick={() => {
                 setIsMenuToggle(!isMenuToggle);
